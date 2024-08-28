@@ -5,15 +5,19 @@
 **Project Overview**
 
 This project implements a Retrieval-Augmented Generation (RAG) method for creating a question-answering system. It utilizes the LLaMA 3 language model in conjunction with LangChain and Ollama packages to process PDFs, convert them into text, create embeddings, and then store the output in a database.
+
 1. **PDF to Text Conversion**
 
 **Definition:** This module handles the conversion of uploaded PDF files into plain text format. It forms the basis for further processing like chunking and embedding.
+
 2. **Text Chunking and Embedding**
 
 **Definition:** The extracted text is divided into manageable chunks, and embeddings are generated using the LLaMA 3 model. This step ensures that the information is stored in a format that is easy to retrieve and query.
+
 3. **Template-Based Prompting**
 
 **Definition:** Templates are created to guide the model's response generation based on user prompts. This structured approach helps in retrieving relevant information from the text embeddings.
+
 4. **Chain Creation**
 
 **Definition:** A chain of operations is built to handle the end-to-end process of input query processing, information retrieval, and response generation using the LLaMA 3 model.
